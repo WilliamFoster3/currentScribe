@@ -1,0 +1,156 @@
+@media only screen and (max-width: 1920px) and (max-height: 1080px) {
+  .transLanguageText {
+      position: static;
+      font-size: 115%;
+      margin-top: 12%;
+      padding-bottom: 40%;
+  }
+
+  .targetLanguageSelect {
+      margin-top: -44.5%;
+      margin-left: 43%;
+      position: absolute;
+  }
+
+  #targetlanguageoptions {
+      border-radius: 15%;
+      margin-left: 57.5%;
+      height: 51px;
+      width: 87%;
+      border-color: black;
+  }
+}
+
+
+@media screen and (max-width: 1680px) and (max-height: 1050px) {
+  .transLanguageText {
+      position: static;
+      font-size: 110%;
+      margin-top: 14.3%;
+      padding-bottom: 40%;
+  }
+
+  .targetLanguageSelect {
+      margin-top: -44.5%;
+      margin-left: 43%;
+      position: absolute;
+  }
+
+  #targetlanguageoptions {
+      border-radius: 15%;
+      margin-left: 51%;
+      height: 51px;
+      width: 77%;
+      border-color: black;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+  .transLanguageText {
+      font-size: 110%;
+      margin-top: 13%;
+      padding-bottom: 40%;
+  }
+
+  .targetLanguageSelect {
+      margin-top: -45%;
+      margin-left: 42.5%;
+      position: absolute;
+  }
+
+  #targetlanguageoptions {
+      border-radius: 15%;
+      margin-left: 49%;
+      height: 51px;
+      width: 72%;
+      border-color: black;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .transLanguageText {
+      font-size: 110%;
+      margin-top: 16%;
+      padding-bottom: 40%;
+  }
+
+  .targetLanguageSelect {
+      margin-top: -46%;
+      margin-left: 43%;
+      position: absolute;
+  }
+
+  #targetlanguageoptions {
+      border-radius: 15%;
+      margin-left: 42%;
+      height: 51px;
+      width: 66%;
+      border-color: black;
+  }
+}
+
+@media screen and (max-width: 1400px) and (max-height: 1050px) {
+  .transLanguageText {
+      font-size: 110%;
+      margin-top: 17%;
+      padding-bottom: 40%;
+  }
+
+  .targetLanguageSelect {
+      margin-top: -46%;
+      margin-left: 43%;
+      position: absolute;
+  }
+
+  #targetlanguageoptions {
+      border-radius: 15%;
+      margin-left: 42%;
+      height: 51px;
+      width: 64%;
+      border-color: black;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+  .transLanguageText {
+      font-size: 110%;
+      margin-top: 13.5%;
+      padding-bottom: 40%;
+  }
+
+  .targetLanguageSelect {
+      margin-top: -46%;
+      margin-left: 42%;
+      position: absolute;
+  }
+
+  #targetlanguageoptions {
+      border-radius: 15%;
+      margin-left: 42%;
+      height: 51px;
+      width: 63%;
+      border-color: black;
+  }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 1024px) {
+  .transLanguageText {
+      font-size: 110%;
+      margin-top: 13.5%;
+      padding-bottom: 40%;
+  }
+
+  .targetLanguageSelect {
+      margin-top: -46%;
+      margin-left: 42%;
+      position: absolute;
+  }
+
+  #targetlanguageoptions {
+      border-radius: 15%;
+      margin-left: 42%;
+      height: 51px;
+      width: 63%;
+      border-color: black;
+  }
+}
