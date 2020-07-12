@@ -1,191 +1,53 @@
-@media screen and (max-width: 1920px) and (max-height: 1080px) {
-  .enter {
-    background-color: white;
-    border-radius: 15%;
-    margin-left: 30%;
-    margin-top: 90%;
-    width: 105%;
-    cursor: pointer;
-  }
-
-
-  .setting-wrapper2 {
-      background-color: white;
-      border-radius: 15%;
-      margin-left: 96%;
-      margin-top: 152%;
-      width: 150%;
-      cursor: pointer;
-      border: solid black;
-      border-width: thin;
-  }
-
-  #entertext {
-      position: static;
-      color: black;
-      text-align: center;
-      font-size: 30px;
-      font-family: 'Arial';
-      font-weight: 100;
-  }
+.enter {
+/*
+  position: absolute;
+  color: white;
+  top: 0;
+  font-family: 'Arial'; font-size: 2.5vw;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  height: 8vh;
+  width: 5vw;
+  border: solid white;
+  border-radius: 15%;
+  background: orange;
+  background: -moz-linear-gradient(left, #000000 0%, #0B0B0B 55%, #181818 100%);
+  background: -webkit-linear-gradient(left, #000000 0%, #0B0B0B 55%, #181818 100%);
+  background: linear-gradient(to right, #000000 0%, #0B0B0B 55%, #181818 100%);
+  cursor: pointer;
+  right: 0;
+  right: 10vw;
+}
+*/
 }
 
-@media screen and (max-width: 1680px) and (max-height: 1050px) {
-  .enter {
+.enter {
     background-color: white;
     border-radius: 15%;
-    margin-left: 30%;
-    margin-top: 90%;
-    width: 105%;
+    height: 70px;
+    width: 100px;
+    margin-left: 26%;
+    margin-top: 50%;
     cursor: pointer;
-  }
-
-
-  .setting-wrapper2 {
-      background-color: white;
-      border-radius: 15%;
-      margin-left: 76.5%;
-      margin-top: 148%;
-      width: 150%;
-      cursor: pointer;
-      border: solid black;
-      border-width: thin;
-  }
-
-  #entertext {
-      position: static;
-      color: black;
-      text-align: center;
-      font-size: 30px;
-      font-family: 'Arial';
-      font-weight: 100;
-  }
+    border: solid black;
+}
+.setting-button2 {
+    background-color: white;
+    border-radius: 15%;
+    height: 70px;
+    width: 100px;
+    margin-left: 26%;
+    margin-top: 50%;
+    cursor: pointer;
+    border: solid black;
 }
 
-@media screen and (max-width: 1600px) and (max-height: 900px) {
-  .enter {
-    background-color: white;
-    border-radius: 15%;
-    margin-left: 30%;
-    margin-top: 90%;
-    width: 105%;
-    cursor: pointer;
-  }
-
-
-  .setting-wrapper2 {
-      background-color: white;
-      border-radius: 15%;
-      margin-left: 67%;
-      margin-top: 128%;
-      width: 150%;
-      cursor: pointer;
-      border: solid black;
-      border-width: thin;
-  }
-
-  #entertext {
-      position: static;
-      color: black;
-      text-align: center;
-      font-size: 30px;
-      font-family: 'Arial';
-      font-weight: 100;
-  }
-}
-
-@media screen and (max-width: 1440px) and (max-height: 900px) {
-  .enter {
-    background-color: white;
-    border-radius: 15%;
-    margin-left: 30%;
-    margin-top: 90%;
-    width: 105%;
-    cursor: pointer;
-  }
-
-
-  .setting-wrapper2 {
-      background-color: white;
-      border-radius: 15%;
-      margin-left: 61%;
-      margin-top: 132%;
-      width: 130%;
-      cursor: pointer;
-      border: solid black;
-      border-width: thin;
-  }
-
-  #entertext {
-      position: static;
-      color: black;
-      text-align: center;
-      font-size: 30px;
-      font-family: 'Arial';
-      font-weight: 100;
-  }
-}
-
-@media screen and (max-width: 1400px) and (max-height: 1050px) {
-  .enter {
-    background-color: white;
-    border-radius: 15%;
-    margin-left: 30%;
-    margin-top: 90%;
-    width: 105%;
-    cursor: pointer;
-  }
-
-
-  .setting-wrapper2 {
-      background-color: white;
-      border-radius: 15%;
-      margin-left: 61%;
-      margin-top: 132%;
-      width: 130%;
-      cursor: pointer;
-      border: solid black;
-      border-width: thin;
-  }
-
-  #entertext {
-      position: static;
-      color: black;
-      text-align: center;
-      font-size: 30px;
-      font-family: 'Arial';
-      font-weight: 100;
-  }
-}
-
-@media screen and (max-width: 1366px) and (max-height: 768px) {
-  .enter {
-    background-color: white;
-    border-radius: 15%;
-    margin-left: 30%;
-    margin-top: 90%;
-    width: 105%;
-    cursor: pointer;
-  }
-
-
-  .setting-wrapper2 {
-      background-color: white;
-      border-radius: 15%;
-      margin-left: 56%;
-      margin-top: 111%;
-      width: 130%;
-      cursor: pointer;
-      border: solid black;
-      border-width: thin;
-  }
-
-  #entertext {
-      position: static;
-      color: black;
-      text-align: center;
-      font-size: 30px;
-      font-family: 'Arial';
-      font-weight: 100;
-  }
+#entertext {
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Arial';
+    font-weight: 100;
 }

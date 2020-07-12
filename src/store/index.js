@@ -14,53 +14,12 @@ const initialStateSuccess= {
     inputValue: 'false'
 }
 
-const currentLanguage= {
-    inputValue: 'English - US'
-}
-
-const targetLanguage= {
-    inputValue: 'English - US'
-}
-
-const desiredAPI= {
-    inputValue: 'webspeech'
-}
-var currentLanguageReducer = (state = initialState, action) =>{
-    switch(action.type) {
-        case 'INPUT_CURRENT_LANGUAGE':
-            return Object.assign({}, state, {inputValue: action.text });
-
-        default:
-            return state;
-    }
-}
-
-var targetLanguageReducer = (state = initialState, action) =>{
-
-    switch(action.type) {
-        case 'INPUT_TARGET_LANGUAGE':
-            return Object.assign({}, state, {inputValue: action.text });
-
-        default:
-            return state;
-    }
-}
-
 var azureKeyReducer = (state = initialState, action) =>{
 
     switch(action.type) {
         case 'INPUT_KEY':
             return Object.assign({}, state, {inputValue: action.text });
 
-        default:
-            return state;
-    }
-}
-var desiredAPIReducer = (state = initialState, action) =>{
-
-    switch(action.type) {
-        case 'INPUT_DESIRED_API':
-            return Object.assign({}, state, {inputValue: action.text });
         default:
             return state;
     }
@@ -90,12 +49,9 @@ var azureRegionOptionsReducer = (state = initialStateRegion, action) => {
 
 
 const allReducers = combineReducers({
-    desiredAPI : desiredAPIReducer,
     azureOptions: azureRegionOptionsReducer,
     azureKey: azureKeyReducer,
     isSuccess: isSuccessReducer,
-    targetLanguage: targetLanguageReducer,
-    currentLanguage: currentLanguageReducer,
 });
 
 
