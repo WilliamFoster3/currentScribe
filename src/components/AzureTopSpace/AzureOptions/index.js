@@ -18,34 +18,82 @@ import {
 
 import store from '../../../store/';
 import LanguageOptions from './Language'
-import TargetLanguage from './TargetLanguage'
+import TargetLanguge from './TargetLanguage'
 
 
 
 export default function AzureOptions() {
     // These are functions that take an object and return an element of the object.
     // They are passed to useSelector, which feeds the global state object into them.
+const items = [
+  {
+    id: 1,
+    value: 'westus',
+  },
+  {
+    id: 2,
+    value: 'westus2',
+  },
+  {
+    id: 3,
+    value: 'ussouthcentral',
+  },
+  {
+    id: 4,
+    value: 'northcentralus',
+  },
+  {
+    id: 5,
+    value: 'useast',
+  },
+  {
+    id: 6,
+    value: 'useast2',
+  },
+  {
+    id: 7,
+    value: 'europewest',
+  },
+  {
+    id: 8,
+    value: 'europenorth',
+  },
+  {
+    id: 9,
+    value: 'brazilsouth',
+  },
+  {
+    id: 10,
+    value: 'australiaeast',
+  },
+  {
+    id: 11,
+    value: 'asiasoutheast',
+  },
+  {
+    id: 12,
+    value: 'asiaeast',
+  },
+];
     return (
-
          <div className="AzureOptions" id="azure-options-space">
-             <div className = "azuremenutext">
-                    <b>AZURE OPTIONS</b>
-                </div>
-                  <div className = "divider">
-                    <Divider variant= "full" />
-               </div>
+         <h2 style = {{fontFamily:"Arial"}}>LOGIN</h2>
+             <h3>Caption</h3>
+         <Divider/>
 
                <div className="item-wrapper">
-                    <UserInput store ={store}/>
+                  <UserInput store ={store}/>
                </div>
+               <br></br>
+               <br></br>
+               <br></br>
 
-               <br></br> <br></br><br></br><br></br>
-               <div>
-                 <div className = "regionText">
-                     Region:
-                 </div>
-                 <Dropdown/>
-               </div>
+              <div className="dd-wrapper">
+
+                    <br></br>
+
+                    <Dropdown title="" items={items}/>
+              </div>
               <div className="item-wrapper">
                    <EnterButton />
               </div>
@@ -59,7 +107,7 @@ export default function AzureOptions() {
                 <div className = "transLanguageText">
                     Translational Lang:
                 </div>
-                <TargetLanguage/>
+                <TargetLanguge/>
               </div>
 
          </div>

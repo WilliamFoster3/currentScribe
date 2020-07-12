@@ -20,17 +20,17 @@ export default function Record(props) {
      // hidden/shown CSS.
      if (store.isSuccessReducer == 'inProgress') {
        return(
-            <div>
+            <div className="item-wrapper-record">
                  Listening
                  <IconButton className = "Play" color= "inherit" size = "large"  >
                       <PauseCircleFilledIcon className = "pause"/>
                  </IconButton>
             </div>
        )
-     } else if (store.desiredAPI == 'azure') {
+     } else if (store.isSuccessReducer == 'success') {
        if (settingAzure == true){
           return(
-               <div>
+               <div className="item-wrapper-record">
                     Listening
                     <IconButton className = "Play" color= "inherit" size = "large" onClick={() => dispatch(flip_recording_azure())} >
                          <PauseCircleFilledIcon className = "pause"/>
@@ -39,7 +39,7 @@ export default function Record(props) {
           )
      } else{
           return(
-               <div>
+               <div className="item-wrapper-record">
                     To Start
                     <IconButton className = "Play" color= "inherit" size = "large" onClick={() => dispatch(flip_recording_azure())}>
                          <PlayCircleFilledIcon className = "start"/>
@@ -48,11 +48,10 @@ export default function Record(props) {
           )
      }
      } else {
-       console.log("else");
+       
        if (setting == true){
-         console.log("setting = true");
              return(
-                  <div>
+                  <div className="item-wrapper-record">
                        Listening
                        <IconButton className = "Play" color= "inherit" size = "large" onClick={() => dispatch(flip_recording())} >
                             <PauseCircleFilledIcon className = "pause"/>
@@ -60,10 +59,8 @@ export default function Record(props) {
                   </div>
              )
         } else{
-          console.log("setting = false");
-
              return(
-                  <div>
+                  <div className="item-wrapper-record">
                        To Start
                        <IconButton className = "Play" color= "inherit" size = "large" onClick={() => dispatch(flip_recording())}>
                             <PlayCircleFilledIcon className = "start"/>

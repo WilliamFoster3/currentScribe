@@ -69,9 +69,7 @@ export const azure_region = (region) => {
           region: "dsfdsf"
      }
 }
-export const flip_micVisual = () => {
-     return { type: 'FLIP_MICVISUAL' };
-}
+
 export const flip_entered_key = () => {
      return { type: 'FLIP_ENTERED_KEY' };
 }
@@ -90,9 +88,6 @@ export const flip_check_azureKey = () => {
 export const flip_instructions = () =>{
      return { type: 'FLIP_INSTRUCTIONS'};
 }
-export const flip_on_webspeech = () =>{
-     return { type: 'FLIP_ON_WEBSPEECH'};
-}
 
 export const flip_menuhide = () =>{
      return { type: 'FLIP_MENUHIDE'};
@@ -103,4 +98,25 @@ export const submenu1 = () =>{
 }
 export const submenu2 = () =>{
      return { type: 'SUBMENU_2'}
+}
+export const next_page = () => {
+     return { type: 'NEXT_PAGE'}
+}
+export const prev_page = () => {
+     return {type: 'PREV_PAGE'}
+}
+export const flip_stereo = () =>{
+     return { type: 'FLIP_STEREO'};
+}
+export const forward_stereoVisual = () => {
+     return {type: 'FORWARD_STEREOVISUAL'};
+}
+export const backward_stereoVisual = () => {
+     return {type: 'BACKWARD_STEREOVISUAL'};
+}
+export const forward_micVisual = () => {
+     return { type: 'FORWARD_MICVISUAL' };
+}
+export const backward_micVisual = () => {
+     return {type: 'BACKWARD_MICVISUAL'};
 }

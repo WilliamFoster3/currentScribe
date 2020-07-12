@@ -4,7 +4,6 @@ import Record from './Record'
 import store from '../../../store'
 import Micvisual from './Micvisual'
 import Save from './Save'
-import SwitchAPI from './SwitchAPI'
 import {useSelector} from "react-redux"
 import Instru from "./Instru"
 import Divider from '@material-ui/core/Divider';
@@ -16,11 +15,12 @@ import PlusMinus from './PlusMinus'
 import {Button} from '@material-ui/core';
 import SpringModal from './SpringModal'
 import PopMenu from '../../PopMenu'
+import Stereovisual  from'./Stereo'
+import VisualControl from './VisualControl'
 
 import {
      flip_switchMenus,
      flip_invertColors,
-     flip_micVisual,
      increment_textSize,
      decrement_textSize,
 } from '../../../redux/actions'
@@ -41,7 +41,11 @@ export default function Options() {
        return (
             <div className="Options" id="options-space">
                 <h2 style = {{fontFamily:"Arial"}}>OPTIONS</h2>
+                <h3>Caption</h3>
                 <Divider/>
+                <div className="item-wrapper">
+                      <Record />
+                 </div>
                 <div className="item-wrapper">
                     <Save />
                  </div>
@@ -55,17 +59,19 @@ export default function Options() {
                       <OnOff item="Invert colors" setting={invertColors}
                            action={flip_invertColors} />
                  </div>
+                <Divider/>
+                <div className="item-wrapper">
+                  <VisualControl />
+              </div>
                  <div className="item-wrapper">
                       <Micvisual />
                  </div>
-                 <div className="item-wrapper">
-                      <Record />
-                 </div>
+                <div className="item-wrapper">
+                  <Stereovisual/>
+              </div>
+
                      <div className = 'item-wrapper'>
                           <SpringModal />
-                    </div>
-                    <div className="item-wrapper">
-                         <SwitchAPI />
                     </div>
                  <Divider />
             </div>
@@ -74,10 +80,16 @@ export default function Options() {
      return (
           <div className="Options" id="options-space">
           <h2 style = {{fontFamily:"Arial"}}>OPTIONS</h2>
+              <h3>Caption</h3>
           <Divider/>
+          <div className="item-wrapper">
+                    <Record />
+               </div>
                <div className="item-wrapper">
                       <Save />
                </div>
+              <h3>Display</h3>
+              <Divider/>
                <div className="item-wrapper">
                     <PlusMinus item="Text size" setting={textSize}
                          increment={increment_textSize}
@@ -87,19 +99,25 @@ export default function Options() {
                     <OnOff item="Invert colors" setting={invertColors}
                          action={flip_invertColors} />
                </div>
+              <h3>Audio Visulization</h3>
+              <Divider/>
+               <div className="item-wrapper">
+                  <VisualControl />
+              </div>
                <div className="item-wrapper">
                     <Micvisual />
                </div>
-               <div className="item-wrapper">
-                    <Record />
-               </div>
+              <div className="item-wrapper">
+                  <Stereovisual/>
+              </div>
+
                <div className = 'item-wrapper'>
                     <SpringModal />
                </div>
-               <div className="item-wrapper">
-                    <AzureTopSpace button="Switch To Azure" setting={switchMenus}
-                         action={flip_switchMenus} />
-               </div>
+               {/*<div className="item-wrapper">*/}
+               {/*     <AzureTopSpace button="Switch To Azure" setting={switchMenus}*/}
+               {/*          action={flip_switchMenus} />*/}
+               {/*</div>*/}
           </div>
      );
    }
